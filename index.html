@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>KuCare</title>
+    <style>
+        html,body{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            background-color: white;
+        }
+        .section-1{
+            height:500px;
+        }
+        .f-l{
+            float:left;
+            height:100%;
+        }
+        .f-r{
+            float:right;
+            height: 100%;
+        }
+        .w-60{
+            width:55%;
+        }
+        .w-40{
+            width: 45%;
+        }
+        .w-75{
+            width: 75%;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width:100%;
+            margin-top: 50px;
+            height:100px;
+        }
+        .headin {
+            color:black;
+            margin-top:45px;
+            margin-bottom:0;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .nav-btns{
+            width:60%;
+            display: flex;
+            justify-content: center;
+        }
+        .login{
+            border:0;
+            background-color: white;
+            padding:10px 30px;
+            color:black;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .signup{
+            background-color: black;
+            color: white;
+            border:none;
+            font-weight: bold;
+            font-size: 18px;
+            padding:10px 40px;
+        }
+        .head{
+            color:black;
+            margin-top:45px;
+            margin-bottom:0;
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .sub-head{
+            color:gray;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+        .flex-row{
+            display: flex;
+            flex-direction: row;
+        }
+        .search-box{
+            width: 70%;
+            height:60px;
+            border:1px solid #ccc;
+            overflow: hidden;
+        }
+        .search-btn{
+            width: 20%;
+            border:none;
+            background-color: #2bff00;
+            color:white;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 18px;
+        }
+        .search-input{
+            height:60px;
+            width:70%;
+            border:none;
+            padding-left: 20px;
+            outline:none;
+            font-size: 18px;
+            color:black;
+            font-weight: bold;
+        }
+        .locate-me{
+            width:20%;
+            height:80%;
+            margin-left: 10px;
+            border:none;
+            color:gray;
+            font-size: 18px;
+            background-color: white;
+            border-radius: 10px;
+            transition: all 0.5s;
+        }
+        .locate-me:hover{
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+        .city{
+            padding-right:20px;
+            color:gray;
+            font-size: 18px;
+        }
+        .city:nth-of-type(odd){
+            font-weight: bold;
+        }
+        #section-2{
+            width:100%;
+            height:400px;
+            background-color: rgb(0, 153, 255);
+            border-radius: 50px;
+        }
+        .head-2{
+            color:white;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .sub-head-2{
+            color:white;
+            margin:0px 40px;
+            text-align: center;
+        }
+        #section-3{
+            height:600px;
+        }
+        footer{
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section-1">
+        <div class="f-l w-60">
+            <div class="f-r w-75">
+                <div class="navbar">
+
+                    <img src="https://www.clipartmax.com/png/full/433-4334414_dog-taking-a-bath-clipart-cartoon-bathtub-with-bubbles.png" alt="logo"  height="100%">
+                    <div class="headin">KuCare</div>
+                    <div class="nav-btns">
+                        <button class="login">Login</button>
+                        <button class="signup">Sign up</button>
+                    </div>
+                </div>
+                <p class="head">Feeling tired?</p>
+                <p class="sub-head">Let us help you to unveil the beauty of your pet.</p>
+                <div class="flex-row">
+                    <div class="search-box">
+                        <input type="text" placeholder="Enter your location" class="search-input"/>
+                        <!-- <button class="locate-me">Locate Me</button> -->
+                    </div>
+                    <button class="search-btn">Your Area</button>
+                </div>
+                <!-- <p class="sub-head" style="font-size: 16px;margin-top:20px;">POPULAR CITIES IN INDIA</p> -->
+                <div class="flex-row">
+                    <p class="city">We are in Hyderabad Now!</p>
+                </div>
+            </div>
+        </div>
+        <div class="f-r w-40">
+            <img src="https://www.clipartmax.com/png/full/289-2894797_maltese-dog-bichon-frise-pet-sitting-dog-grooming-clip-cartoon-dog-in.png" width="100%" height="100%"/>
+        </div>
+    </div>
+    <section id="section-2">
+        <div class="flex-row" style="justify-content: center;">
+            <div style="width:25%; display: flex; flex-direction: column; align-items: center;">
+                <img src="https://www.clipartmax.com/png/full/72-723733_cartoon-dental-dentist-emoji-smiley-tooth-icon-cartoon-tooth-and-toothbrush.png" width="30%" height="50%"/>
+                <p class="head-2">Free Toothbrush</p>
+                <p class="sub-head-2">After using a brandnew toothbrush, its yours to keep</p>
+            </div>
+            <div style="width:25%; display: flex; flex-direction: column; align-items: center;">
+                <img src="https://www.clipartmax.com/png/full/61-612963_clipart-track-tracking-clip-art.png" width="30%" height="50%"/>
+                <p class="head-2">Live Tracking</p>
+                <p class="sub-head-2">Know where your pet's groomer is at all times, from our office to your doorstep</p>
+            </div>
+            <div style="width:25%; display: flex; flex-direction: column; align-items: center;">
+                <img src="https://www.clipartmax.com/png/full/363-3638178_you-get-the-technology-to-recognize-find-and-fix-shifty-refer-and.png" width="30%" height="50%"/>
+                <p class="head-2">Refer and Earn</p>
+                <p class="sub-head-2">Refer your friends and get 150/- off on your next appointment.</p>
+            </div>
+        </div>
+    </section>
+    <section id="section-3">
+        <div style="float: left; width:50%; height:100%;display: flex;align-items: center; justify-content: center;">
+            <div style="float: right;height:50%; width:50%">
+                <p class="head">Your pet's beauty in your pocket</p>
+                <p class="sub-head">Book your slots now with the all-new KuCare app.</p>
+                <div class="flex-row">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp" width="200px" height="60px"/>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty" width="200px" height="60px" style="margin-left: 20px;"/>
+                </div>
+            </div>
+        </div>
+        <div style="position:relative;float: right; width: 50%; display: flex; height:100%">
+            <img src="https://www.clipartmax.com/png/full/3-39222_clip-art-for-schedule-clipart-download-appointment-clip-art.png" height="500px" style="position:absolute;bottom:15%;right:45%"/>
+            <img src="https://www.clipartmax.com/png/full/110-1105641_24-7-all-days-open-book-now-button-png.png"  style="position:absolute;bottom:15%;right:0%"/>
+        </div>
+    </section>
+    <footer>
+        <img src="https://www.clipartmax.com/png/full/152-1522887_dog-sitting-logo.png" height="60px" />
+        <p style="color:white; font-size: 21px;">&copy; 2022 KuCare</p>
+        <div style="width:200px; display: flex; justify-content: space-between; align-items: center;">
+            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-facebook_tfqsuc" width="24" height="24"/>
+            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-pinterest_kmz2wd" width="24" height="24"/>
+            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-instagram_b7nubh" width="24" height="24"/>
+            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-twitter_gtq8dv" width="24" height="24"/>
+            
+        
+        </div>
+    </footer>
+</body>
+</html>
